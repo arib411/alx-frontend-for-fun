@@ -1,10 +1,12 @@
-/* Nested hover
-change button color on hover*/
+// Define variables for colors
+$default-color: #FF0000;
+$hover-color: #00FF00;
 
+// Styles for button tags
 button {
-    color: #FF0000;
-
-    &:hover {
-        color: #00FF00;
-    }
+  color: $default-color;
+  
+  &:hover {
+    color: $hover-color;
+  }
 }
