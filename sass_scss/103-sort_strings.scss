@@ -1,5 +1,8 @@
-/* Write a Sass file that sorts the variable $list_to_sort and prints the sorted list in the debug output. */
-@import '103-sort_list.scss';
-@each $name in $list_to_sort {
-    @debug #{$name};
-}
+// Define the variable with an unsorted list
+$list_to_sort: (5, 2, 9, 1, 7);
+
+// Sort the list
+$list_sorted: sort($list_to_sort);
+
+// Print the sorted list in debug output
+@debug "Sorted List: #{inspect($list_sorted)}";
